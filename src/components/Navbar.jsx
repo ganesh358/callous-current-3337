@@ -8,7 +8,7 @@ function Navbar() {
     
   return (
     <Box >
-      <Flex width="100%" gap="1rem"  bgColor="white" position="fixed"   p="1rem"    justifyContent="space-around"  >
+      <Flex width="100%" gap="1rem"  bgColor="white" position="fixed"    p="1rem"    justifyContent="space-around"  >
       
         {/* <Spacer /> */}
        <Box mt=".5rem" ml="-2rem"> <img style={{ width:"15rem",height:"1.9rem"}} src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7cd432feb68e_bonsai-logo.svg" alt="" /></Box>
