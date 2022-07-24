@@ -11,7 +11,7 @@ function Navbar() {
       <Flex width="100%" gap="1rem"  bgColor="white" position="fixed"    p="1rem"    justifyContent="space-around"  >
       
         {/* <Spacer /> */}
-       <Box mt=".5rem" ml="-2rem"> <img style={{ width:"15rem",height:"1.9rem"}} src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7cd432feb68e_bonsai-logo.svg" alt="" /></Box>
+       <Box mt=".5rem" ml="-2rem"><Link href="/"><img style={{ width:"15rem",height:"1.9rem"}} src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7cd432feb68e_bonsai-logo.svg" alt="" /></Link> </Box>
        <Box display="flex">
        <div class="dropdown">
             <button class="dropbtn">Product <ChevronDownIcon/></button>
@@ -53,13 +53,17 @@ function Navbar() {
             </div>
            
           <div id="lnk">
-          <Link to="/Pricing" fontSize='md' mt=".1rem" ml="2rem">Pricing</Link>
-           <Link to="/Reviews" fontSize='md'mt=".1rem" ml="3rem">Reviews</Link>
+          <Link href="/pricing" fontSize='md' mt=".1rem" ml="2rem">Pricing</Link>
+          
+           <Link href="/Reviews" fontSize='md'mt=".1rem" ml="3rem">Reviews</Link>
           </div>
           </Box>
             <Box>
             <div>
-                <button id="btn" > GO TO DASHBOARD</button>
+            <Link href='/login'>
+            <button id="btn" > GO TO DASHBOARD</button>
+           </Link>
+                
             </div>
             </Box>
       </Flex>
