@@ -1,11 +1,23 @@
 import Navbar from "../components/Navbar";
-import SlideShow from "../slide"
-
+import { Link} from "@chakra-ui/react";
 import Svga from "../components/icon/Svga"
 import "../App.css";
+import {ChevronDownIcon} from "@chakra-ui/icons"
 import Tabs from '../tabs';
+import Footer from "../components/Footer";
+import {
+    Accordion,
+    AccordionItem,
+    AccordionButton,
+    AccordionPanel,
+    AccordionIcon,
+    Box
+  } from '@chakra-ui/react'
+
 
 function Home(){
+
+    
     return (
         
         <div>
@@ -220,8 +232,166 @@ function Home(){
                         lineHeight:"2.5rem"
                 }}>Don't just take it from us.</h1>
 
-               <SlideShow/>
+
+         
+            
+       
+        <div style={{
+               
+                display:"flex",
+                width:"60rem",
+                height:"28rem",
+                marginLeft:"12rem",
+                gap:"1.5rem",
+                justifyContent:"space-between",
+                marginTop:"12rem"
+            }}>
                 
+            <div style={{
+                
+                width:"30rem",
+                paddingTop:"8rem",
+                boxShadow:"rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px"
+                 
+            }}>    <img style={{
+                width:"10.5rem",
+                marginTop:"-12rem",
+                height:"12rem",
+                borderRadius:"0rem 3rem 0rem 3rem",
+                objectFit:"cover"
+
+            }} src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5888e1f5f34690422d33efce_david-mihm.jpg" alt="" />
+                   <img  style={{marginLeft:'12rem',marginTop:"-2rem"}} src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg" alt="" />
+
+                   <p style={{width:"25rem",
+                          fontSize:"1.3rem",
+                          marginTop:"1.5rem",
+                          width:"27rem"
+                }}>"For all my Freelancer / Small Agency followers, I wish I’d discovered @bonsaiinc long ago - great templated contract"</p>
+
+                <p 
+                    style={{
+                        fontFamily:"sans-serif",
+                        fontWeight:"600",
+                        fontSize:"1.1rem",
+                        marginTop:"2rem"
+                        
+                     }}>David Mihm</p>
+                <p style={{
+              fontFamily:"sans-serif",
+              
+              fontSize:"1.1rem",
+              paddingTop:".5rem",
+              color:"grey"
+              
+           }}>Founder of TidingsCo</p>
+
+            </div>
+            <div style={{
+              
+                width:"30rem",
+                paddingTop:"8rem",
+                boxShadow:"rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px"
+                
+            }}>
+             <img style={{
+                width:"10.5rem",
+                height:"12rem",
+                marginTop:"-12rem",
+                borderRadius:"0rem 3rem 0rem 3rem",
+                objectFit:"cover"
+            }}  src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5888e56ffe81b74722a25aa8_DavidUrbinati.jpg" alt="" />
+            <img style={{marginLeft:'12rem',marginTop:"-2rem"}} src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg" alt="" />
+            <p style={{width:"25rem",
+                          fontSize:"1.3rem",
+                          marginTop:"1.5rem",
+                          width:"27rem"
+                }}>"@bonsaiinc is probably my all time favorite freelance tool. hands down. the team is super responsive and accessible when i have questions."</p>
+           <p style={{
+              fontFamily:"sans-serif",
+              fontWeight:"600",
+              fontSize:"1.1rem",
+              marginTop:"2rem"
+              
+           }}>David Urbinati</p>
+           <p style={{
+              fontFamily:"sans-serif",
+              
+              fontSize:"1.1rem",
+              paddingTop:".5rem",
+              color:"grey"
+              
+           }}>Motion design / animation</p>
+            </div>
+           </div>
+            <div style={{display:"flex",marginLeft:"40.9rem",gap:".5rem",
+        marginTop:"3rem"}}>
+                <div style={{
+                    border:"1px solid green",
+                    width:".8rem",
+                    height:".8rem",
+                    backgroundColor:"green",
+                    borderRadius:"50%",
+                    marginTop:"-.11rem"
+
+                
+             }}></div>
+               <div style={{
+                    border:"1px solid black",
+                    width:".5rem",
+                    height:".5rem",
+                    borderRadius:"50%"
+                
+             }}></div>
+               </div>
+          
+
+
+          <div style={{
+               borderRadius:"1rem",
+               width:"58rem",
+               height:"15rem",
+               marginLeft:"13rem",
+               marginTop:"8rem",
+               display:"flex",
+               justifyContent:"space-between",
+               padding:"3rem",
+               paddingTop:"4rem",
+               backgroundColor:"#f2faff"
+
+          }}>
+            <div>
+                 <h1 style={{
+                       fontSize:"2.7rem",
+                       marginLeft:"-8.9rem",
+                       fontFamily:"none",
+                       color:"#4c525a"
+                 }}>It’s <span style={{color:"#00af87"}}>your</span> business.</h1>
+                 <h1 style={{
+                       fontSize:"2.7rem",
+                       fontFamily:"none",
+                       color:"#4c525a"
+                 }}> We’re here to help it grow.</h1>
+            </div>
+            <div>
+                <button style={{
+                 
+                    fontSize:'.9rem',
+                    fontWeight:"400",
+                    padding:".2rem",
+                    width:"12.5rem",
+                    height:'2.9rem',
+                    marginTop:"2rem",
+                    backgroundColor:"#00af87",
+                    color:"white",
+                    borderRadius:".3rem"
+
+                }}>GO TO DASHBOARD</button>
+            </div>
+          </div>
+                    
+                   
+                <Footer />
         </div>
     )
 }
